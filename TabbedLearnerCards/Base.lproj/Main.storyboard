@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lV0-3e-SDd">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LearnerCards Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LearnerCardViewController" id="BYZ-38-t0r" userLabel="LearnerCards Item" customClass="LearnerCardViewController" customModule="TabbedLearnerCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qo6-4b-cAe">
+                                <rect key="frame" x="16" y="38" width="343" height="125"/>
+                                <color key="backgroundColor" red="0.94328010082244873" green="0.71563725429665725" blue="0.88273285565755077" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdX-hk-Mku">
+                                <rect key="frame" x="16" y="171" width="343" height="130"/>
+                                <color key="backgroundColor" red="0.61647796630859375" green="0.025769972010660492" blue="0.38040357189885377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="szD-VA-Esp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Question">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s2W-GB-2Fg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r33-ij-nSj">
+                                <rect key="frame" x="16" y="309" width="343" height="136"/>
+                                <color key="backgroundColor" red="0.91976243257522583" green="0.6492565606561902" blue="0.85397103676052954" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6g-jn-UV6">
+                                <rect key="frame" x="16" y="466" width="343" height="122"/>
+                                <color key="backgroundColor" red="0.61647796629999996" green="0.025769972009999999" blue="0.38040357190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="BeH-Aw-gFU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Answer">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="827-9Y-1gg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XdX-hk-Mku" firstAttribute="top" secondItem="qo6-4b-cAe" secondAttribute="bottom" constant="8" id="298-C5-EpH"/>
+                            <constraint firstItem="qo6-4b-cAe" firstAttribute="leading" secondItem="XdX-hk-Mku" secondAttribute="leading" id="Gws-B5-ErC"/>
+                            <constraint firstItem="XdX-hk-Mku" firstAttribute="trailing" secondItem="P6g-jn-UV6" secondAttribute="trailing" id="Ocq-af-Lum"/>
+                            <constraint firstItem="XdX-hk-Mku" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="171" id="PDb-5E-aML"/>
+                            <constraint firstItem="qo6-4b-cAe" firstAttribute="trailing" secondItem="XdX-hk-Mku" secondAttribute="trailing" id="QIC-1I-urG"/>
+                            <constraint firstItem="XdX-hk-Mku" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="R6l-xp-A2q"/>
+                            <constraint firstItem="P6g-jn-UV6" firstAttribute="top" secondItem="r33-ij-nSj" secondAttribute="bottom" constant="21" id="ZfH-eD-Nd2"/>
+                            <constraint firstItem="r33-ij-nSj" firstAttribute="top" secondItem="XdX-hk-Mku" secondAttribute="bottom" constant="8" id="aid-aW-Sj6"/>
+                            <constraint firstItem="XdX-hk-Mku" firstAttribute="leading" secondItem="P6g-jn-UV6" secondAttribute="leading" id="ak7-jG-b14"/>
+                            <constraint firstItem="XdX-hk-Mku" firstAttribute="leading" secondItem="r33-ij-nSj" secondAttribute="leading" id="okk-o6-vyz"/>
+                            <constraint firstItem="XdX-hk-Mku" firstAttribute="trailing" secondItem="r33-ij-nSj" secondAttribute="trailing" id="sgc-OL-vV8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P6g-jn-UV6" secondAttribute="bottom" constant="30" id="yS4-6y-Vxb"/>
+                            <constraint firstItem="qo6-4b-cAe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="ykt-oa-tta"/>
+                            <constraint firstItem="XdX-hk-Mku" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="z3F-gU-Krc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="LearnerCards" image="list.bullet.rectangle.portrait" catalog="system" id="mct-sQ-pPH" userLabel="LearnerCards"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="r33-ij-nSj" id="zv8-a7-uMI"/>
+                        <outlet property="questionLabel" destination="qo6-4b-cAe" id="6fK-1K-MPF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1898.4000000000001" y="3.1484257871064472"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="42f-Sm-Yz8">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lV0-3e-SDd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kGt-oM-9ij">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="9FM-Zg-qce"/>
+                        <segue destination="sBh-sX-PGB" kind="relationship" relationship="viewControllers" id="5Tk-Ar-G2S"/>
+                        <segue destination="LnS-T1-6rq" kind="relationship" relationship="viewControllers" id="76x-RA-ZrS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LiD-Rr-icq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959.20000000000005" y="3.1484257871064472"/>
+        </scene>
+        <!--Edit Cards-->
+        <scene sceneID="On7-Zo-o7K">
+            <objects>
+                <viewController id="sBh-sX-PGB" userLabel="Edit Cards" customClass="EditCardsViewController" customModule="TabbedLearnerCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ds9-kd-B2U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Xj-bJ-CLa">
+                                <rect key="frame" x="16" y="93" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.94328010080000002" green="0.71563725430000003" blue="0.88273285570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKk-BG-emC">
+                                <rect key="frame" x="16" y="154" width="343" height="35"/>
+                                <color key="backgroundColor" red="0.61647796629999996" green="0.025769972009999999" blue="0.38040357190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="OK">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonOKActionWithSender:" destination="sBh-sX-PGB" eventType="touchUpInside" id="GvJ-11-b4g"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1zE-fq-Sk6">
+                                <rect key="frame" x="16" y="51" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.94328010080000002" green="0.71563725430000003" blue="0.88273285570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SUq-Vh-Myp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tKk-BG-emC" firstAttribute="trailing" secondItem="ds9-kd-B2U" secondAttribute="trailingMargin" id="Bfn-Zi-5Tz"/>
+                            <constraint firstItem="tKk-BG-emC" firstAttribute="top" secondItem="4Xj-bJ-CLa" secondAttribute="bottom" constant="27" id="LoZ-eg-5FZ"/>
+                            <constraint firstItem="1zE-fq-Sk6" firstAttribute="top" secondItem="SUq-Vh-Myp" secondAttribute="top" constant="31" id="XRn-XS-JBL"/>
+                            <constraint firstItem="tKk-BG-emC" firstAttribute="leading" secondItem="4Xj-bJ-CLa" secondAttribute="leading" id="YR4-7P-gtQ"/>
+                            <constraint firstItem="tKk-BG-emC" firstAttribute="leading" secondItem="ds9-kd-B2U" secondAttribute="leadingMargin" id="aFh-vD-qBA"/>
+                            <constraint firstItem="SUq-Vh-Myp" firstAttribute="bottom" secondItem="tKk-BG-emC" secondAttribute="bottom" constant="429" id="eSB-nf-Crf"/>
+                            <constraint firstItem="tKk-BG-emC" firstAttribute="trailing" secondItem="4Xj-bJ-CLa" secondAttribute="trailing" id="f2O-4r-Zp8"/>
+                            <constraint firstItem="tKk-BG-emC" firstAttribute="trailing" secondItem="1zE-fq-Sk6" secondAttribute="trailing" id="tL8-oa-zrB"/>
+                            <constraint firstItem="tKk-BG-emC" firstAttribute="leading" secondItem="1zE-fq-Sk6" secondAttribute="leading" id="xUq-Jj-ktV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Edit Cards" image="pencil" catalog="system" id="vyi-uf-jW3"/>
+                    <connections>
+                        <outlet property="answerTextField" destination="4Xj-bJ-CLa" id="oyZ-ur-xgP"/>
+                        <outlet property="questionTextField" destination="1zE-fq-Sk6" id="cgd-DL-FR4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tRS-KP-BhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="759"/>
+        </scene>
+        <!--Add Cards-->
+        <scene sceneID="AdV-eb-Nkm">
+            <objects>
+                <viewController id="LnS-T1-6rq" customClass="AddCardsViewController" customModule="TabbedLearnerCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TwX-2E-Oey">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XQ3-i1-dkN">
+                                <rect key="frame" x="16" y="46" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.94328010080000002" green="0.71563725430000003" blue="0.88273285570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJI-Qa-PHx">
+                                <rect key="frame" x="16" y="88" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.94328010080000002" green="0.71563725430000003" blue="0.88273285570000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJM-Ec-efr">
+                                <rect key="frame" x="16" y="155" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.61647796629999996" green="0.025769972009999999" blue="0.38040357190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vks-Ti-To5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="OK">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addCardOKButton:" destination="LnS-T1-6rq" eventType="touchUpInside" id="HPz-ap-aoq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zwl-v7-GaY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QJM-Ec-efr" firstAttribute="top" secondItem="zJI-Qa-PHx" secondAttribute="bottom" constant="33" id="2oH-7u-lj3"/>
+                            <constraint firstItem="QJM-Ec-efr" firstAttribute="trailing" secondItem="XQ3-i1-dkN" secondAttribute="trailing" id="8Oj-T3-tgb"/>
+                            <constraint firstItem="Zwl-v7-GaY" firstAttribute="bottom" secondItem="QJM-Ec-efr" secondAttribute="bottom" constant="433" id="NVL-Hd-lL2"/>
+                            <constraint firstItem="XQ3-i1-dkN" firstAttribute="top" secondItem="Zwl-v7-GaY" secondAttribute="top" constant="26" id="XVR-cy-P2t"/>
+                            <constraint firstItem="QJM-Ec-efr" firstAttribute="leading" secondItem="XQ3-i1-dkN" secondAttribute="leading" id="d05-uE-4yW"/>
+                            <constraint firstItem="QJM-Ec-efr" firstAttribute="leading" secondItem="TwX-2E-Oey" secondAttribute="leadingMargin" id="m1B-PH-rqF"/>
+                            <constraint firstItem="QJM-Ec-efr" firstAttribute="trailing" secondItem="TwX-2E-Oey" secondAttribute="trailingMargin" id="qgM-cL-1kg"/>
+                            <constraint firstItem="QJM-Ec-efr" firstAttribute="trailing" secondItem="zJI-Qa-PHx" secondAttribute="trailing" id="vEh-N2-T9D"/>
+                            <constraint firstItem="QJM-Ec-efr" firstAttribute="leading" secondItem="zJI-Qa-PHx" secondAttribute="leading" id="x5x-8Y-jII"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Cards" image="plus.rectangle.fill.on.rectangle.fill" catalog="system" id="hBZ-dE-aFy"/>
+                    <connections>
+                        <outlet property="answerTextField" destination="zJI-Qa-PHx" id="e0O-rY-Vq1"/>
+                        <outlet property="questionTextField" destination="XQ3-i1-dkN" id="uCm-iG-b1W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aum-WP-CzM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1785" y="-680"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="plus.rectangle.fill.on.rectangle.fill" catalog="system" width="128" height="102"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
