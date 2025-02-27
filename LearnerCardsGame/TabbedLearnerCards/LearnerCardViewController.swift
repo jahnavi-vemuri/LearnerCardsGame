@@ -26,6 +26,7 @@ class LearnerCardViewController: UIViewController {
         self.questionLabel.text = lQuestion
         
         self.answerLabel.text = "(...try guessing...)"
+        NotificationCenter.default.post(name: Notification.Name("newQuestionDisplayed"), object: nil)
         
     }
     @IBAction func showAnswer(_ sender: Any){
@@ -39,17 +40,6 @@ class LearnerCardViewController: UIViewController {
             self.answerLabel.text = "show the question first before showing the answer"
         }
     }
-    
-    // Prepare data to pass to EditCardsViewController
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "EditCardSegue" {
-                if let editVC = segue.destination as? EditCardsViewController {
-                    // Pass the current question and answer to EditCardsViewController
-                    editVC.currentQuestion = self.myLearnerCardModel?.getCurrentQuestion()
-                    editVC.currentAnswer = self.myLearnerCardModel?.getAnswer()
-                }
-            }
-        }
     
     override func viewDidLoad() {
         super.viewDidLoad()

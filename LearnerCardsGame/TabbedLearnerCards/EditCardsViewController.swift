@@ -57,8 +57,13 @@ class EditCardsViewController: UIViewController {
         if let currentAnswerString = myLearnerCardModel?.getAnswer(){
             answerTextField.text = currentAnswerString
         }
+        NotificationCenter.default.addObserver(self, selector: #selector(updateFields), name: Notification.Name("newQuestionDisplayed"), object: nil)
     }
     
+    @objc func updateFields() {
+        self.questionTextField.text = myLearnerCardModel?.getCurrentQuestion()
+        self.answerTextField.text = myLearnerCardModel?.getAnswer()
+    }
 
     /*
     // MARK: - Navigation

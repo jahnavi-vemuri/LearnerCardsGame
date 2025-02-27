@@ -16,6 +16,8 @@
 		CE23142C2D4C6267001B5587 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CE23142B2D4C6267001B5587 /* Base */; };
 		CE2314342D5088DB001B5587 /* LearnerCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2314332D5088DB001B5587 /* LearnerCardModel.swift */; };
 		CE57F7BB2D65124100E3CF47 /* AddCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F7BA2D65124100E3CF47 /* AddCardsViewController.swift */; };
+		CE59A5FF2D700BD400D802C2 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59A5FE2D700BD400D802C2 /* PlayersViewController.swift */; };
+		CE59A6012D700C3500D802C2 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE59A6002D700C3500D802C2 /* PlayerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CE23142D2D4C6267001B5587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2314332D5088DB001B5587 /* LearnerCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnerCardModel.swift; sourceTree = "<group>"; };
 		CE57F7BA2D65124100E3CF47 /* AddCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardsViewController.swift; sourceTree = "<group>"; };
+		CE59A5FE2D700BD400D802C2 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		CE59A6002D700C3500D802C2 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				CE2314332D5088DB001B5587 /* LearnerCardModel.swift */,
 				CE21CDEA2D6248A000A84FAB /* EditCardsViewController.swift */,
 				CE57F7BA2D65124100E3CF47 /* AddCardsViewController.swift */,
+				CE59A5FE2D700BD400D802C2 /* PlayersViewController.swift */,
+				CE59A6002D700C3500D802C2 /* PlayerCell.swift */,
 			);
 			path = TabbedLearnerCards;
 			sourceTree = "<group>";
@@ -147,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE59A6012D700C3500D802C2 /* PlayerCell.swift in Sources */,
 				CE57F7BB2D65124100E3CF47 /* AddCardsViewController.swift in Sources */,
+				CE59A5FF2D700BD400D802C2 /* PlayersViewController.swift in Sources */,
 				CE21CDEB2D6248A000A84FAB /* EditCardsViewController.swift in Sources */,
 				CE2314242D4C6266001B5587 /* LearnerCardViewController.swift in Sources */,
 				CE2314342D5088DB001B5587 /* LearnerCardModel.swift in Sources */,
